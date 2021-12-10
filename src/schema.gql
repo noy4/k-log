@@ -1,0 +1,21 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type KLog {
+  id: String!
+  title: String!
+}
+
+type Query {
+  getKLogs: [KLog!]!
+  findOneById(id: String!): KLog!
+}
+
+type Mutation {
+  create(newKLogData: NewKLogInput!): KLog!
+}
+
+input NewKLogInput {
+  title: String!
+}
